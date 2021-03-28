@@ -35,32 +35,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7CL-EX-Ydg">
-                                                    <rect key="frame" x="0.0" y="56.5" width="383" height="683"/>
+                                                    <rect key="frame" x="0.0" y="105.5" width="383" height="585.5"/>
                                                     <subviews>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TbX-1d-bTY">
-                                                            <rect key="frame" x="0.0" y="0.0" width="383" height="128"/>
-                                                            <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Cosmo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rl0-2J-lQ6">
-                                                                    <rect key="frame" x="42" y="16" width="299" height="104"/>
-                                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="26"/>
-                                                                    <nil key="textColor"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                            </subviews>
-                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                            <constraints>
-                                                                <constraint firstItem="rl0-2J-lQ6" firstAttribute="leading" secondItem="TbX-1d-bTY" secondAttribute="leading" constant="42" id="QGw-ic-cMB"/>
-                                                                <constraint firstAttribute="bottom" secondItem="rl0-2J-lQ6" secondAttribute="bottom" constant="8" id="TEG-45-460"/>
-                                                                <constraint firstItem="rl0-2J-lQ6" firstAttribute="top" secondItem="TbX-1d-bTY" secondAttribute="top" constant="16" id="gcR-ud-W0B"/>
-                                                                <constraint firstAttribute="trailing" secondItem="rl0-2J-lQ6" secondAttribute="trailing" constant="42" id="zdM-3t-wRE"/>
-                                                            </constraints>
-                                                        </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bLe-8E-hkR">
-                                                            <rect key="frame" x="0.0" y="128" width="383" height="128"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="383" height="158.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Earn points auto-magically every time you order from your favorite restaurants." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emK-Bf-w0i">
-                                                                    <rect key="frame" x="42" y="0.0" width="299" height="112"/>
-                                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                                                    <rect key="frame" x="16" y="0.0" width="351" height="142.5"/>
+                                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="22"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
@@ -68,20 +50,20 @@
                                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                             <constraints>
                                                                 <constraint firstItem="emK-Bf-w0i" firstAttribute="top" secondItem="bLe-8E-hkR" secondAttribute="top" id="Ans-1k-B5u"/>
-                                                                <constraint firstItem="emK-Bf-w0i" firstAttribute="leading" secondItem="bLe-8E-hkR" secondAttribute="leading" constant="42" id="HEU-Ad-u90"/>
-                                                                <constraint firstAttribute="trailing" secondItem="emK-Bf-w0i" secondAttribute="trailing" constant="42" id="PbQ-l3-rOR"/>
+                                                                <constraint firstItem="emK-Bf-w0i" firstAttribute="leading" secondItem="bLe-8E-hkR" secondAttribute="leading" constant="16" id="HEU-Ad-u90"/>
+                                                                <constraint firstAttribute="trailing" secondItem="emK-Bf-w0i" secondAttribute="trailing" constant="16" id="PbQ-l3-rOR"/>
                                                                 <constraint firstAttribute="bottom" secondItem="emK-Bf-w0i" secondAttribute="bottom" constant="16" id="Q5c-59-KG7"/>
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ao4-fk-g2E">
-                                                            <rect key="frame" x="0.0" y="256" width="383" height="383"/>
+                                                            <rect key="frame" x="0.0" y="158.5" width="383" height="383"/>
                                                             <color key="backgroundColor" systemColor="systemPurpleColor"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="ao4-fk-g2E" secondAttribute="height" multiplier="1:1" id="6HF-ni-UuM"/>
                                                             </constraints>
                                                         </view>
                                                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="shq-5y-2TS">
-                                                            <rect key="frame" x="0.0" y="639" width="383" height="44"/>
+                                                            <rect key="frame" x="0.0" y="541.5" width="383" height="44"/>
                                                             <subviews>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QCR-m7-tWh">
                                                                     <rect key="frame" x="0.0" y="0.0" width="22" height="44"/>
@@ -97,7 +79,7 @@
                                                                         <constraint firstAttribute="height" constant="44" id="qxz-BX-aHe"/>
                                                                     </constraints>
                                                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="26"/>
-                                                                    <state key="normal" title="Button">
+                                                                    <state key="normal" title="Next">
                                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     </state>
                                                                 </button>
