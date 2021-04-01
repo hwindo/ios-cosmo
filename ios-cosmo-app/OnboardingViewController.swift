@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Lottie
 
 struct Slide {
     let label: String
@@ -15,9 +16,9 @@ struct Slide {
     
     // create collection
     static let collections: [Slide] = [
-        .init(label: "Earn points auto-magically every time you order from your favorite restaurants.", animationName: "", buttonLabel: "Next", buttonColor: .white),
-        .init(label: "Redeem your points for tasty rewards.", animationName: "", buttonLabel: "Next", buttonColor: .white),
-        .init(label: "All your rewards and promotions stay in one place!", animationName: "", buttonLabel: "Next", buttonColor: .systemYellow)
+        .init(label: "Earn points auto-magically every time you order from your favorite restaurants.", animationName: "reward-aksorn", buttonLabel: "Next", buttonColor: .white),
+        .init(label: "Redeem your points for tasty rewards.", animationName: "time-aksorn", buttonLabel: "Next", buttonColor: .white),
+        .init(label: "All your rewards and promotions stay in one place!", animationName: "success-aksorn", buttonLabel: "Next", buttonColor: .systemYellow)
     ]
 }
 
@@ -74,13 +75,22 @@ extension OnboardingViewController: UICollectionViewDelegate, UICollectionViewDa
 class OnboardingCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var slideLabel: UILabel!
-    @IBOutlet weak var slideAnimationPicture: UIView!
+    @IBOutlet weak var animationView: AnimationView!
     @IBOutlet weak var actionButton: UIButton!
     
     func configure(_ with: Slide) {
         slideLabel.text = with.label
         actionButton.setTitle(with.buttonLabel, for: .normal)
         actionButton.backgroundColor = with.buttonColor
+        
+        let animation = Animation.named(with.animationName)
+            
+        animationView.animation = animation
+        animationView.loopMode = .loop
+        
+        if !animationView.isAnimationPlaying {
+            animationView.play()
+        }
     }
     
     @IBAction func actionButtonPressed(_ sender: Any) {
