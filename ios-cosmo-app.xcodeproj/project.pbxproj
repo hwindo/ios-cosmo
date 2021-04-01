@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		079C374CE5E1D0038F218A1B /* Pods_ios_cosmo_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D29CBEB5A6F1CD1E5F64A70 /* Pods_ios_cosmo_app.framework */; };
+		42632E7126154F4D0091EE65 /* success-aksorn.json in Resources */ = {isa = PBXBuildFile; fileRef = 42632E6D26154F4C0091EE65 /* success-aksorn.json */; };
+		42632E7226154F4D0091EE65 /* reward-aksorn.json in Resources */ = {isa = PBXBuildFile; fileRef = 42632E6F26154F4C0091EE65 /* reward-aksorn.json */; };
+		42632E7326154F4D0091EE65 /* time-aksorn.json in Resources */ = {isa = PBXBuildFile; fileRef = 42632E7026154F4D0091EE65 /* time-aksorn.json */; };
 		429219D6260EF900004745FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429219D5260EF900004745FD /* AppDelegate.swift */; };
 		429219D8260EF900004745FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429219D7260EF900004745FD /* SceneDelegate.swift */; };
 		429219DA260EF900004745FD /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429219D9260EF900004745FD /* OnboardingViewController.swift */; };
@@ -16,6 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24529A23D5644C78B5CA27D4 /* Pods-ios-cosmo-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-cosmo-app.release.xcconfig"; path = "Target Support Files/Pods-ios-cosmo-app/Pods-ios-cosmo-app.release.xcconfig"; sourceTree = "<group>"; };
+		3899814E292C1AD6305E1E59 /* Pods-ios-cosmo-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-cosmo-app.debug.xcconfig"; path = "Target Support Files/Pods-ios-cosmo-app/Pods-ios-cosmo-app.debug.xcconfig"; sourceTree = "<group>"; };
+		42632E6D26154F4C0091EE65 /* success-aksorn.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "success-aksorn.json"; sourceTree = "<group>"; };
+		42632E6F26154F4C0091EE65 /* reward-aksorn.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "reward-aksorn.json"; sourceTree = "<group>"; };
+		42632E7026154F4D0091EE65 /* time-aksorn.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "time-aksorn.json"; sourceTree = "<group>"; };
 		429219D2260EF900004745FD /* ios-cosmo-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-cosmo-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		429219D5260EF900004745FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		429219D7260EF900004745FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +33,7 @@
 		429219DE260EF903004745FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		429219E1260EF903004745FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		429219E3260EF903004745FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D29CBEB5A6F1CD1E5F64A70 /* Pods_ios_cosmo_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_cosmo_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				079C374CE5E1D0038F218A1B /* Pods_ios_cosmo_app.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		408151BD4937ACFDEF20D187 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3899814E292C1AD6305E1E59 /* Pods-ios-cosmo-app.debug.xcconfig */,
+				24529A23D5644C78B5CA27D4 /* Pods-ios-cosmo-app.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		42632E6B26154F390091EE65 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				42632E6F26154F4C0091EE65 /* reward-aksorn.json */,
+				42632E6D26154F4C0091EE65 /* success-aksorn.json */,
+				42632E7026154F4D0091EE65 /* time-aksorn.json */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
 		429219C9260EF900004745FD = {
 			isa = PBXGroup;
 			children = (
 				429219D4260EF900004745FD /* ios-cosmo-app */,
 				429219D3260EF900004745FD /* Products */,
+				408151BD4937ACFDEF20D187 /* Pods */,
+				C901100C0AAC79354BA09FBF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				429219D5260EF900004745FD /* AppDelegate.swift */,
+				42632E6B26154F390091EE65 /* assets */,
 				429219D7260EF900004745FD /* SceneDelegate.swift */,
 				429219D9260EF900004745FD /* OnboardingViewController.swift */,
 				429219DB260EF900004745FD /* Main.storyboard */,
@@ -67,6 +100,14 @@
 			path = "ios-cosmo-app";
 			sourceTree = "<group>";
 		};
+		C901100C0AAC79354BA09FBF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D29CBEB5A6F1CD1E5F64A70 /* Pods_ios_cosmo_app.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +115,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 429219E6260EF903004745FD /* Build configuration list for PBXNativeTarget "ios-cosmo-app" */;
 			buildPhases = (
+				18CA4AAA1BD2647A5A30C91C /* [CP] Check Pods Manifest.lock */,
 				429219CE260EF900004745FD /* Sources */,
 				429219CF260EF900004745FD /* Frameworks */,
 				429219D0260EF900004745FD /* Resources */,
+				79E7706A0581188EBBF5A1E2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,11 +169,56 @@
 			files = (
 				429219E2260EF903004745FD /* LaunchScreen.storyboard in Resources */,
 				429219DF260EF903004745FD /* Assets.xcassets in Resources */,
+				42632E7226154F4D0091EE65 /* reward-aksorn.json in Resources */,
 				429219DD260EF900004745FD /* Main.storyboard in Resources */,
+				42632E7326154F4D0091EE65 /* time-aksorn.json in Resources */,
+				42632E7126154F4D0091EE65 /* success-aksorn.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18CA4AAA1BD2647A5A30C91C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ios-cosmo-app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79E7706A0581188EBBF5A1E2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios-cosmo-app/Pods-ios-cosmo-app-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios-cosmo-app/Pods-ios-cosmo-app-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ios-cosmo-app/Pods-ios-cosmo-app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		429219CE260EF900004745FD /* Sources */ = {
@@ -283,6 +371,7 @@
 		};
 		429219E7260EF903004745FD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3899814E292C1AD6305E1E59 /* Pods-ios-cosmo-app.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +391,7 @@
 		};
 		429219E8260EF903004745FD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24529A23D5644C78B5CA27D4 /* Pods-ios-cosmo-app.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
