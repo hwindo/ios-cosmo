@@ -37,9 +37,25 @@ class OnboardingViewController: UIViewController {
         if indexPath.item == slides.count - 1 {
             // this is the last slide
             print("We're in last slide")
+            showMainApp()
         } else {
             let nextIndex = indexPath.item + 1
             collectionView.scrollToItem(at: IndexPath(item: nextIndex, section: 0), at: .right, animated: true)
+        }
+    }
+    
+    // open main app
+    func showMainApp() {
+        let mainAppViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "MainAppViewController")
+        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene, // what's this
+           let sceneDelegate = windowScene.delegate as? SceneDelegate,
+           let window = sceneDelegate.window {
+            window.rootViewController = mainAppViewController
+            UIView.transition(with: window,
+                                    duration: 0.6,
+                                    options: .transitionCrossDissolve,
+                                    animations: nil,
+                                    completion: nil)
         }
     }
 }
