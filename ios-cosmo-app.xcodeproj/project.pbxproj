@@ -11,6 +11,7 @@
 		42632E7126154F4D0091EE65 /* success-aksorn.json in Resources */ = {isa = PBXBuildFile; fileRef = 42632E6D26154F4C0091EE65 /* success-aksorn.json */; };
 		42632E7226154F4D0091EE65 /* reward-aksorn.json in Resources */ = {isa = PBXBuildFile; fileRef = 42632E6F26154F4C0091EE65 /* reward-aksorn.json */; };
 		42632E7326154F4D0091EE65 /* time-aksorn.json in Resources */ = {isa = PBXBuildFile; fileRef = 42632E7026154F4D0091EE65 /* time-aksorn.json */; };
+		427418BD2618971C00BA94AD /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427418BC2618971C00BA94AD /* Slide.swift */; };
 		429219D6260EF900004745FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429219D5260EF900004745FD /* AppDelegate.swift */; };
 		429219D8260EF900004745FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429219D7260EF900004745FD /* SceneDelegate.swift */; };
 		429219DA260EF900004745FD /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429219D9260EF900004745FD /* OnboardingViewController.swift */; };
@@ -25,6 +26,7 @@
 		42632E6D26154F4C0091EE65 /* success-aksorn.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "success-aksorn.json"; sourceTree = "<group>"; };
 		42632E6F26154F4C0091EE65 /* reward-aksorn.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "reward-aksorn.json"; sourceTree = "<group>"; };
 		42632E7026154F4D0091EE65 /* time-aksorn.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "time-aksorn.json"; sourceTree = "<group>"; };
+		427418BC2618971C00BA94AD /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Slide.swift; path = models/Slide.swift; sourceTree = "<group>"; };
 		429219D2260EF900004745FD /* ios-cosmo-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-cosmo-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		429219D5260EF900004745FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		429219D7260EF900004745FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				429219DE260EF903004745FD /* Assets.xcassets */,
 				429219E0260EF903004745FD /* LaunchScreen.storyboard */,
 				429219E3260EF903004745FD /* Info.plist */,
+				427418BC2618971C00BA94AD /* Slide.swift */,
 			);
 			path = "ios-cosmo-app";
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 				429219DA260EF900004745FD /* OnboardingViewController.swift in Sources */,
 				429219D6260EF900004745FD /* AppDelegate.swift in Sources */,
 				429219D8260EF900004745FD /* SceneDelegate.swift in Sources */,
+				427418BD2618971C00BA94AD /* Slide.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

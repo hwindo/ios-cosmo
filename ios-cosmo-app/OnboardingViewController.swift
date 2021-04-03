@@ -8,20 +8,6 @@
 import UIKit
 import Lottie
 
-struct Slide {
-    let label: String
-    let animationName: String
-    let buttonLabel: String
-    let buttonColor: UIColor
-    
-    // create collection
-    static let collections: [Slide] = [
-        .init(label: "Earn points auto-magically every time you order from your favorite restaurants.", animationName: "reward-aksorn", buttonLabel: "Next", buttonColor: .white),
-        .init(label: "Redeem your points for tasty rewards.", animationName: "time-aksorn", buttonLabel: "Next", buttonColor: .white),
-        .init(label: "All your rewards and promotions stay in one place!", animationName: "success-aksorn", buttonLabel: "Next", buttonColor: .systemYellow)
-    ]
-}
-
 class OnboardingViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
@@ -45,6 +31,17 @@ class OnboardingViewController: UIViewController {
         collectionView.contentInsetAdjustmentBehavior = .never
         collectionView.isPagingEnabled = true
     }
+    
+    private func handleActionButtonTap(at indexPath: IndexPath) {
+        // go to next slide
+        if indexPath.item == slides.count - 1 {
+            // this is the last slide
+            print("We're in last slide")
+        } else {
+            let nextIndex = indexPath.item + 1
+            collectionView.scrollToItem(at: IndexPath(item: nextIndex, section: 0), at: .right, animated: true)
+        }
+    }
 }
 
 extension OnboardingViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -56,6 +53,10 @@ extension OnboardingViewController: UICollectionViewDelegate, UICollectionViewDa
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath) as! OnboardingCollectionViewCell
         let slide = slides[indexPath.item]
         cell.configure(slide)
+        cell.actionButtonDidTap = {
+            print(indexPath.item)
+            self.handleActionButtonTap(at: indexPath)
+        }
         return cell
     }
     
@@ -78,6 +79,8 @@ class OnboardingCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var animationView: AnimationView!
     @IBOutlet weak var actionButton: UIButton!
     
+    var actionButtonDidTap: (() -> Void)?
+    
     func configure(_ with: Slide) {
         slideLabel.text = with.label
         actionButton.setTitle(with.buttonLabel, for: .normal)
@@ -94,6 +97,6 @@ class OnboardingCollectionViewCell: UICollectionViewCell {
     }
     
     @IBAction func actionButtonPressed(_ sender: Any) {
-        print("actionButtonPressed")
+        actionButtonDidTap?()
     }
 }
