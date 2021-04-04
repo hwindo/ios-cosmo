@@ -11,6 +11,7 @@ import Lottie
 class OnboardingViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var pageControl: UIPageControl!
     
     private let slides: [Slide] = Slide.collections
     
@@ -19,6 +20,7 @@ class OnboardingViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         initCollectionView()
+        setupPageControl()
     }
     
     private func initCollectionView() {
@@ -32,6 +34,10 @@ class OnboardingViewController: UIViewController {
         collectionView.isPagingEnabled = true
     }
     
+    private func setupPageControl() {
+        pageControl.numberOfPages = slides.count
+    }
+    
     private func handleActionButtonTap(at indexPath: IndexPath) {
         // go to next slide
         if indexPath.item == slides.count - 1 {
@@ -41,6 +47,7 @@ class OnboardingViewController: UIViewController {
         } else {
             let nextIndex = indexPath.item + 1
             collectionView.scrollToItem(at: IndexPath(item: nextIndex, section: 0), at: .right, animated: true)
+            pageControl.currentPage = nextIndex
         }
     }
     
@@ -57,6 +64,11 @@ class OnboardingViewController: UIViewController {
                                     animations: nil,
                                     completion: nil)
         }
+    }
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        let index = Int(collectionView.contentOffset.x / scrollView.frame.size.width)
+        pageControl.currentPage = index
     }
 }
 
